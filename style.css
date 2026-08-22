@@ -1,0 +1,133 @@
+/* =========================
+   CODER'S LAIR TERMINAL
+   ========================= */
+
+.terminal {
+    position: fixed;
+
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 300px;
+
+    background: #080b09;
+    color: #00ff88;
+
+    border: 1px solid #00ff88;
+    border-radius: 12px;
+
+    box-shadow: 0 0 25px rgba(0, 255, 136, 0.18);
+
+    font-family: monospace;
+
+    overflow: hidden;
+
+    z-index: 9999;
+}
+
+.terminal-header {
+    background: #111;
+
+    padding: 10px;
+
+    border-bottom: 1px solid #00ff88;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    font-size: 13px;
+}
+
+.terminal-header span {
+    font-size: 10px;
+}
+
+.terminal-header strong {
+    margin-left: 6px;
+}
+
+.terminal-content {
+    padding: 15px;
+}
+
+.terminal-welcome {
+    margin-top: 0;
+}
+
+.terminal-subtitle {
+    color: #aaa;
+    font-size: 13px;
+}
+
+/* Buttons */
+
+.terminal button {
+    display: block;
+
+    width: 100%;
+
+    margin: 8px 0;
+
+    padding: 10px;
+
+    background: #0d120f;
+
+    border: 1px solid #245c43;
+
+    border-radius: 6px;
+
+    color: #00ff88;
+
+    font-family: monospace;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.terminal button:hover {
+    background: #12351f;
+
+    border-color: #00ff88;
+
+    transform: translateX(3px);
+}
+
+/* Output */
+
+#terminal-output {
+    margin-top: 15px;
+
+    padding-top: 10px;
+
+    border-top: 1px solid #222;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+#terminal-output a {
+    color: #00ff88;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .terminal {
+        width: calc(100% - 30px);
+
+        right: 15px;
+
+        top: auto;
+        bottom: 15px;
+
+        transform: none;
+    }
+
+}
